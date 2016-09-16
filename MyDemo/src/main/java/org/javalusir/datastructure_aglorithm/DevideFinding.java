@@ -1,6 +1,6 @@
 package org.javalusir.datastructure_aglorithm;
 /**
- * This class is a demo for devideFinding
+ * This class is a demo for devideFinding have a try
  * @author javalusir
  *
  */
@@ -60,7 +60,7 @@ public class DevideFinding {
 	 * find the value have been given if exist return true
 	 * else return false
 	 * @param param value
-	 * @return boolean
+	 * @return boolean 
 	 */
 	public boolean find(int param) {
 		int lowerBounds = 0;
