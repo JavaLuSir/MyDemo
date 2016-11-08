@@ -6,7 +6,6 @@ package org.javalusir.pattern.producer_consumer;
  */
 public class Consumer implements Runnable{
 
-	@Override
 	public void run() {
 		while(true){
 			try {

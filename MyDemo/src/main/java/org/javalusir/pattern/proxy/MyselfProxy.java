@@ -6,7 +6,6 @@ import java.lang.reflect.Method;
 public class MyselfProxy implements InvocationHandler{
 
 	public Object target;
-	@Override
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
 		method.invoke(target, args);

@@ -52,7 +52,7 @@ public class MyFrame extends JFrame{
 		
 		jButton.addActionListener(new ActionListener() {
 			
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				if(jText.getText().equals("")||jText2.getText().equals("")){
 					return;
@@ -62,7 +62,7 @@ public class MyFrame extends JFrame{
 		});
 		jButtoncz.addActionListener(new ActionListener() {
 			
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				if(jText.getText().equals("")&&jText2.getText().equals("")){
 					return;
@@ -75,7 +75,7 @@ public class MyFrame extends JFrame{
 		jText2.addActionListener(new ActionListener() {
 			
 			@SuppressWarnings("static-access")
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				if(jText.getText().equals("")||jText2.getText().equals("")){
 					return;

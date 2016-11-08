@@ -12,7 +12,7 @@ public class CommandImpl implements Command{
 	public CommandImpl(Receiver receiver){
 		this.receicer=receiver;
 	}
-	@Override
+	
 	public void execute() {
 		receicer.action();
 	}

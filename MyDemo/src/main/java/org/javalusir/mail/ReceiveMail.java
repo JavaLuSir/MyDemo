@@ -16,7 +16,7 @@ public class ReceiveMail {
         Properties props = System.getProperties();
         String host = "pop3.163.com";
         String username = "javalusir@163.com";
-        String password = "123";
+        String password = "l109242554";
         String provider = "pop3";
         try {
             // 连接到POP3服务器

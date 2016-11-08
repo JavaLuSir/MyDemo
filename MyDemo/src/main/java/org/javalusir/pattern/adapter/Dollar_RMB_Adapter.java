@@ -14,7 +14,6 @@ public class Dollar_RMB_Adapter implements ISpendRMB{
 	/**
 	 * change dollar to rmb
 	 */
-	@Override
 	public void spend() {
 		System.out.println(this.dollar.getDollar()*6);
 	}

@@ -13,7 +13,6 @@ public class Circle implements Shape{
 		this.draw = draw;
 	}
 
-	@Override
 	public void draw() {
 		draw.drawShape();
 		

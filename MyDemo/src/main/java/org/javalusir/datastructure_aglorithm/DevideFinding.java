@@ -22,7 +22,6 @@ public class DevideFinding {
 	 * @param param int value
 	 */
 	public DevideFinding(int size,int[] param) {
-		
 		dfarry = new int[size];
 		this.length=size;
 		for(int i=0;i<size;i++){
@@ -53,7 +52,6 @@ public class DevideFinding {
 	 */
 	public void insert(){
 		bubbleSort();
-		
 	}
 	
 	/**

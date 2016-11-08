@@ -6,7 +6,6 @@ package org.javalusir.pattern.strategy;
  */
 public class BikeStrategy implements IStrategy{
 
-	@Override
 	public void goSomeWhere() {
 		System.out.println("bike go there");
 	}

@@ -10,10 +10,15 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.DefaultConsumer;
 import com.rabbitmq.client.Envelope;
-
+/**
+ * this demo is use to receive message by rabbitMQ,to run this demo the RabbitMQ must be
+ * installed.and maybe you need to install Erlang environment before.
+ * @author lu
+ *
+ */
 public class Rev {
 
-	private static final String QUEUE_NAME= "hello";
+	public static final String QUEUE_NAME= "hello";
 	public static void main(String[] args) throws IOException, TimeoutException{
 		ConnectionFactory factory = new ConnectionFactory();
 		factory.setHost("localhost");
