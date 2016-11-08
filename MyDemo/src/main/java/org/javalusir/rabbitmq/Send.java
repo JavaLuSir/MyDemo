@@ -14,9 +14,9 @@ public class Send {
 		connectFactory.setHost("localhost");
 		Connection connection = connectFactory.newConnection();
 		Channel channel = connection.createChannel();
-		channel.queueDeclare("hello", false, false, false, null);
-		String message = "hello world!";
-		channel.basicPublish("", "hello", null, message.getBytes());
+		channel.queueDeclare(Rev.QUEUE_NAME, false, false, false, null);
+		String message = "hello world!......";
+		channel.basicPublish("", Rev.QUEUE_NAME, null, message.getBytes());
 		System.out.println(" [x] Sent '" + message + "'");
 		
 		channel.close();
