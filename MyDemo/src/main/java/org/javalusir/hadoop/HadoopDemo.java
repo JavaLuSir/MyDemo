@@ -1,4 +1,4 @@
-package com.javalusir.hadoop;
+package org.javalusir.hadoop;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
