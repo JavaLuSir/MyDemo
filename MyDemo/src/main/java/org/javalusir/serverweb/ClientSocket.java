@@ -31,7 +31,7 @@ public class ClientSocket {
 		
 		BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 */		
-		int port = 9000;
+/*		int port = 9000;   
 		InetAddress addr = InetAddress.getByName("127.0.0.1");
 		Socket socket = new Socket(addr,port);
 		OutputStream os = socket.getOutputStream();
@@ -56,6 +56,29 @@ public class ClientSocket {
 			Thread.sleep(50);
 		}
 		System.out.println(sbf);
+		socket.close();*/
+		int port=9000;
+		InetAddress addr = InetAddress.getByName("localhost");
+		Socket socket = new Socket(addr,port);
+		PrintWriter pw = new PrintWriter(socket.getOutputStream(), true);
+		pw.println("GET /index.html HTTP/1.1");
+		pw.println("HOST:"+addr.getHostName()+":"+port);
+		pw.println("Connection:close");
+		BufferedReader bfr = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+		StringBuilder sbb = new StringBuilder();
+		boolean isfinish = false;
+		while(!isfinish){
+			if(bfr.ready()){
+				int i = 0;
+				while(i!=-1){
+					i=bfr.read();
+					sbb.append((char)i);
+				}
+				isfinish = true;
+			}
+			Thread.sleep(50);
+		}
+		System.out.println(sbb);
 		socket.close();
 	}
 }
