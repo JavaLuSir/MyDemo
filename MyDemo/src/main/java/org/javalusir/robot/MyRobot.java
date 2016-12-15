@@ -12,7 +12,6 @@ public class MyRobot {
 
 	public static void main(String[] args) throws AWTException, InterruptedException{
 		Robot robot = new Robot();
-		Thread.sleep(3000);
 		robot.mouseMove(710, 50);
 		robot.mousePress(InputEvent.BUTTON1_MASK);
 		robot.mouseRelease(InputEvent.BUTTON1_MASK);
